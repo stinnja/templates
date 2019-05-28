@@ -1,0 +1,72 @@
+root/
+├── README.md
+├── LICENCE.md
+├── gulpfile.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+|
+├── src/
+|    ├── sass/
+|    |    ├── modules/    // anything that doesnt result in output
+|    |    |    ├── _import.scss // import all .scss files in this folder
+|    |    |    ├── _variables.scss // colors, etc
+|    |    |    ├── _mixins.scss
+|    |    |    ...
+|    |    |
+|    |    ├── partials/    // anything user-created that has to be compiled
+|    |    |    ├── _import.scss
+|    |    |    ├── _base.scss // overall changes (html, body, header text, etc)
+|    |    |    ├── _elements.scss // footer, header, hero, social
+|    |    |    ...
+|    |    |
+|    |    ├── vendor/    // anything third-party
+|    |    |    ├── _import.scss
+|    |    |    ├── _vendor-reset.scss // normalize.scss for example
+|    |    |    ├── _ui-framework.scss
+|    |    |    ...
+|    |    ├── styles.scss // contains all _import.scss files. Vendor > Modules > Partials
+|    |
+|    |    // pug structure is only for static sites :shrug:
+|    ├── pug/
+|    |    ├── includes/
+|    |    |    ├── _head.pug
+|    |    |    ├── _header.pug
+|    |    |    ├── _hero.pug
+|    |    |    ├── _footer.pug
+|    |    |    ...
+|    |    |
+|    |    ├── page1/
+|    |    |    ├── index.pug
+|    |    ...
+|    |    |
+|    |    ├── index.pug // home
+|    |
+|    ├── js/
+|    |    ...
+|    |
+|    ├── assets/
+|    |    ├── images/ // to be compressed
+|    |    ...
+|    ...
+|
+├── dist/
+|    ├── .htaccess
+|    ├── favicon.ico
+|    ├── index.html
+|    |
+|    ├── css/ // compiled and minifed
+|    |    ├── styles.min.css
+|    |
+|    ├── page1/
+|    |    ├── index.html // compiled html
+|    |
+|    ... // other pages
+|    |
+|    ├── assets/
+|    |    ├── images/ // compressed images
+|    |    ...
+|    ...
+
+
+from turbo

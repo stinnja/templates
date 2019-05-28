@@ -1,3 +1,4 @@
+<!-- PHP Includes directory locations do not exist. They must be created before this page can be used. -->
 <!--<?php include("includes/a_config.php");?>-->
 
 <!DOCTYPE html>
